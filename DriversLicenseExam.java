@@ -29,7 +29,7 @@ public class DriversLicenseExam
             answer = keyboard.nextLine();
 
             // Input validation
-            while(!answer.equalsIgnoreCase("A") || !answer.equalsIgnoreCase("B") || !answer.equalsIgnoreCase("C") || !answer.equalsIgnoreCase("D"))
+            while(!answer.equalsIgnoreCase("A") && !answer.equalsIgnoreCase("B") && !answer.equalsIgnoreCase("C") && !answer.equalsIgnoreCase("D"))
             {
                 System.out.print("Invalid Answer. Enter A, B, C, or D: ");
                 answer = keyboard.nextLine();
