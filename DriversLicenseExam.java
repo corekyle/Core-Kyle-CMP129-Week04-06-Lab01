@@ -28,6 +28,13 @@ public class DriversLicenseExam
             System.out.printf("Enter Answer for question %d: ", i + 1);
             answer = keyboard.nextLine();
 
+            // Input validation
+            while(!answer.equalsIgnoreCase("A") || !answer.equalsIgnoreCase("B") || !answer.equalsIgnoreCase("C") || !answer.equalsIgnoreCase("D"))
+            {
+                System.out.print("Invalid Answer. Enter A, B, C, or D: ");
+                answer = keyboard.nextLine();
+            }
+
             // Add user answer to array
             userAnswers[i] = answer;
 
@@ -65,7 +72,7 @@ public class DriversLicenseExam
 
         // Display the questions the user answered incorrectly
         System.out.println("");
-        
+
         System.out.printf("You answered incorrectly for questions ");
         for(int i = 0; i < incorrectAnswerNumbers.length; i++)
         {
