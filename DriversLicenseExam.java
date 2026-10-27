@@ -17,9 +17,8 @@ public class DriversLicenseExam
         // Declare variables
         String answer;
 
-        int correctTotal = 0;
+        double correctTotal = 0;
         int incorrectTotal = 0;
-
 
         // Iterate through correctAnswers array
         for(int i = 0; i < correctAnswers.length; i++)
@@ -64,7 +63,7 @@ public class DriversLicenseExam
         }
         
         // Display total number of correct and incorrect answers
-        System.out.printf("Correct Answers: %d", correctTotal);
+        System.out.printf("Correct Answers: %.0f", correctTotal);
 
         System.out.println("");
 
